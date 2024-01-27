@@ -46,7 +46,6 @@
 		5AD7DDCA2B5D801800DD5E04 = {
 			isa = PBXGroup;
 			children = (
-				5ABE6A402B61EF8400760E8D /* AddItemViewController.swift */,
 				5AD7DDD52B5D801800DD5E04 /* Checklists */,
 				5AD7DDD42B5D801800DD5E04 /* Products */,
 			);
@@ -63,6 +62,7 @@
 		5AD7DDD52B5D801800DD5E04 /* Checklists */ = {
 			isa = PBXGroup;
 			children = (
+				5ABE6A402B61EF8400760E8D /* AddItemViewController.swift */,
 				5AD7DDD62B5D801800DD5E04 /* AppDelegate.swift */,
 				5AD7DDD82B5D801800DD5E04 /* SceneDelegate.swift */,
 				5AD7DDED2B5D82A800DD5E04 /* ChecklistViewController.swift */,

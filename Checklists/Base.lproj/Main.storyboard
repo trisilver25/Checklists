@@ -47,7 +47,7 @@
                     <navigationItem key="navigationItem" title="Checklists" id="Rvp-ax-508">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="NR0-ek-SZl">
                             <connections>
-                                <segue destination="7Av-s5-Joe" kind="show" id="nKw-nm-ocK"/>
+                                <segue destination="7Av-s5-Joe" kind="show" identifier="AddItem" id="nKw-nm-ocK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="868" y="-45.42728635682159"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Item-->
         <scene sceneID="LrO-1P-L6H">
             <objects>
-                <tableViewController title="Table View Controller" id="7Av-s5-Joe" customClass="AddItemViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7Av-s5-Joe" customClass="AddItemViewController" customModule="Checklists" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="bfD-by-bFT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                         <sections>
                             <tableViewSection id="pNY-nT-QWQ">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fi8-Y0-uRd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="Fi8-Y0-uRd">
                                         <rect key="frame" x="0.0" y="18" width="375" height="30.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fi8-Y0-uRd" id="Pjn-ou-ELw">
@@ -78,6 +78,10 @@
                                                     <rect key="frame" x="16" y="4" width="343" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="done" destination="7Av-s5-Joe" eventType="editingDidEndOnExit" id="iIt-hd-0MN"/>
+                                                        <outlet property="delegate" destination="7Av-s5-Joe" id="R1A-Wt-4lp"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -102,9 +106,14 @@
                                 <action selector="cancel" destination="7Av-s5-Joe" id="4TV-RZ-fa4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="VOz-0Z-9cp"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="done" id="VOz-0Z-9cp">
+                            <connections>
+                                <action selector="done" destination="7Av-s5-Joe" id="8VE-od-6zh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneBarButton" destination="VOz-0Z-9cp" id="fmQ-2c-4Jj"/>
                         <outlet property="textField" destination="2uF-BG-x0p" id="sUq-Ib-gY8"/>
                     </connections>
                 </tableViewController>
