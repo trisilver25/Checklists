@@ -30,8 +30,8 @@
             filePath = "Checklists/AddItemViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "textFieldShouldClear(_:)"
             landmarkType = "7">
             <Locations>
@@ -80,6 +80,51 @@
                   endingLineNumber = "67"
                   offsetFromSymbolStart = "68">
                </Location>
+               <Location
+                  uuid = "1430E507-0212-4161-93A7-B7B360683CB5 - b342bbeb7aadb1b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.AddItemViewController.textFieldShouldClear(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsmith/Documents/iOS%20Dev/Checklists/Checklists/Checklists/AddItemViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "1430E507-0212-4161-93A7-B7B360683CB5 - b342bbeb7aadb191"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.AddItemViewController.textFieldShouldClear(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsmith/Documents/iOS%20Dev/Checklists/Checklists/Checklists/AddItemViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "1430E507-0212-4161-93A7-B7B360683CB5 - b342bbeb7aadb0aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Checklists.AddItemViewController.textFieldShouldClear(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "Checklists"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tsmith/Documents/iOS%20Dev/Checklists/Checklists/Checklists/AddItemViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "68">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -93,9 +138,9 @@
             filePath = "Checklists/AddItemViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "AddItemViewController"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "ItemDetailViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -109,9 +154,9 @@
             filePath = "Checklists/AddItemViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "AddItemViewController"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "ItemDetailViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
