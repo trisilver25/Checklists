@@ -8,6 +8,7 @@
 import UIKit
 
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
+    var checklist: Checklist!
     
     // MARK: Add Item ViewController Delegates
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController) {
@@ -66,9 +67,13 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        // Disable large titles for this view controller
+        navigationItem.largeTitleDisplayMode = .never
         // Load Items
         loadChecklistItems()
+        
+        title = checklist.name
     }
     
     // MARK: - Table View Data Source
