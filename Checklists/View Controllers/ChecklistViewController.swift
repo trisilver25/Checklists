@@ -10,6 +10,7 @@ import UIKit
 class ChecklistViewController: UITableViewController, ItemDetailViewControllerDelegate {
     var checklist: Checklist!
     
+    
     // MARK: Add Item ViewController Delegates
     func itemDetailViewControllerDidCancel(_ controller: ItemDetailViewController) {
         navigationController?.popViewController(animated: true)
