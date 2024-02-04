@@ -16,25 +16,8 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         //Enable large titles
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        /* Add placeholder data
-        var list = Checklist(name: "Birthdays")
-        dataModel.lists.append(list)
-        
-        list = Checklist(name: "Groceries")
-        dataModel.lists.append(list)
-        
-        list = Checklist(name: "Cool Apps")
-        dataModel.lists.append(list)
-        
-        list = Checklist(name: "To Do")
-        dataModel.lists.append(list)
-        */
-        
-        // Add placeholder item data
         for list in dataModel.lists {
             let item = ChecklistItem()
-            item.text = "Item for \(list.name)"
-            list.items.append(item)
         }
         
     }
